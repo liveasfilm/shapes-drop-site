@@ -34,7 +34,7 @@
           <strong>App:</strong> Shapes Drop (<code>com.liveasfilm.shapesdrop</code>)<br />
           <strong>Developer:</strong> liveasfilm<br />
           <strong>Effective date:</strong> May 25, 2026<br />
-          <strong>Last updated:</strong> May 25, 2026
+          <strong>Last updated:</strong> November 3, 2026
         </p>
 
         <p>
@@ -50,7 +50,8 @@
           Our principle is simple: we do not ask you to sign in, we do not ask
           for any personally identifying information, and we do not build a
           profile of you. The App is free to play and supported by third-party
-          advertising and platform-provided leaderboards, which collect a
+          advertising; it also uses platform-provided leaderboards and Google
+          Analytics for Firebase usage statistics. These services collect a
           limited amount of data described below.
         </p>
 
@@ -97,6 +98,18 @@
             <em>Settings → Google → Ads</em>.
           </li>
         </ul>
+        <p>
+          In the EEA, the UK and Switzerland, Google's consent screen (User
+          Messaging Platform) is shown when the App starts, before any ad is
+          requested. Your choice on this screen is passed to Google not only
+          for advertising but also as your consent to analytics storage in
+          Google Analytics (this corresponds to your choice on storing and
+          accessing information on your device). If you consent, analytics
+          storage is allowed; if you do not, it is treated as not allowed and
+          Google Analytics uses less information for measurement. To change
+          your choice, clear the App's data or reinstall the App, and the
+          consent screen will be shown again on the next launch.
+        </p>
         <p>
           For more information, see Google's
           <a
@@ -165,10 +178,40 @@
           not under our control.
         </p>
 
+        <h3>2.5 Google Analytics for Firebase (usage analytics)</h3>
+        <p>
+          The App uses Google Analytics for Firebase to understand how the game
+          is played and to find problems. The SDK processes a random
+          app-instance ID created per installation, device model, operating
+          system version and language, app version, an approximate
+          country-level region derived from the IP address, first open,
+          session start and engagement time, and in-game events sent by the
+          App (for example the start and end of a game, merge chains, new
+          shapes discovered, new best scores, sharing, and ad and purchase
+          results). Depending on the device, the Android Advertising ID or the
+          iOS identifier for vendors (IDFV) may be processed as well. No name,
+          email address or other directly identifying information is sent. In
+          the EEA, the UK and Switzerland, analytics storage depends on your
+          choice on the consent screen (see section 2.1).
+        </p>
+        <p>
+          For more information, see
+          <a
+            href="https://firebase.google.com/support/privacy"
+            target="_blank"
+            rel="noopener"
+            >Privacy and Security in Firebase</a
+          >.
+        </p>
+
         <h2>3. How information is used</h2>
         <p>The limited information described above is used to:</p>
         <ul>
           <li>display and measure advertisements (Google AdMob);</li>
+          <li>
+            understand how the game is played and fix problems (Google
+            Analytics for Firebase);
+          </li>
           <li>
             show your score on global leaderboards and unlock achievements
             (Game Center, Play Games);
@@ -199,6 +242,11 @@
               <td>Google (AdMob)</td>
               <td>Serve and measure ads</td>
               <td>Advertising ID, IP-based location, device info, ad events</td>
+            </tr>
+            <tr>
+              <td>Google (Google Analytics for Firebase)</td>
+              <td>Usage analytics</td>
+              <td>App-instance ID, device and app info, approximate region, in-game events</td>
             </tr>
             <tr>
               <td>Apple (Game Center)</td>
